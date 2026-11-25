@@ -1,11 +1,4 @@
-"""guildtools.loot - Loot and bonus gold helpers for the guild hall."""
-
-# loot.split_loot(total, heroes)
-#   What it does: Each hero's share of the gold, rounded up (the math module).
-#   Returns: A whole number
-# loot.bonus_gold()
-#   What it does: A bonus of 10, 20, 30, 40, 50 or 60 gold: a d6 roll times 10. Uses from .dice import roll.
-#   Returns: A whole number
+"""Loot and bonus gold helpers for the guild hall."""
 
 import math
 from .dice import roll

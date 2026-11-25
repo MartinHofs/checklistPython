@@ -1,11 +1,4 @@
-"""guildtools.dice - Dice helpers for the guild hall."""
-
-# dice.roll(sides)
-#   What it does: One random roll from 1 to sides (the random module).
-#   Returns: A whole number
-# dice.roll_many(count, sides)
-#   What it does: A list of count random rolls from 1 to sides (the random module).
-#   Returns: A list of whole numbers
+"""Dice helpers for the guild hall."""
 
 import random
 

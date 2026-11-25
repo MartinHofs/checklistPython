@@ -9,35 +9,10 @@ COMMANDS = {
     "split": split_loot,
     "today": lambda: __import__("datetime").date.today(),
     "bonus": bonus_gold,
-}
-USAGE = "Usage: python guild.py roll SIDES | split TOTAL HEROES | today | bonus"
+} # The commands dictionary maps command names to their corresponding functions.
+USAGE = "Usage: python guild.py roll SIDES | split TOTAL HEROES | today | bonus" #The usage string provides instructions on how to use the script, including the available commands and their expected arguments.
 
-# Format:
-    # $ python guild.py roll 20
-    # Rolled a d20: 10
-    # $ python guild.py split 100 3
-    # Each of 3 heroes gets 34 gold.
-    # $ python guild.py today
-    # Today is 2026-11-23.
-    # $ python guild.py dance
-    # Usage: python guild.py roll SIDES | split TOTAL HEROES | today
-    # $ python guild.py 
-    # Usage: python guild.py roll SIDES | split TOTAL HEROES | today
-
-    # $ python -m pydoc guildtools.dice
-    # Help on module guildtools.dice in guildtools:
-
-    # NAME
-    #     guildtools.dice - Dice helpers for the guild hall.
-
-    # FUNCTIONS
-    #     roll(sides)
-    #         Return one random roll from 1 to sides.
-        
-    #     roll_many(count, sides)
-    #         Return a list of count rolls of a die with the given sides.
-
-def main():
+def main(): # The main function serves as the entry point for the script. It processes command-line arguments, validates them, and executes the corresponding command based on user input.
     if len(sys.argv) < 2:
         print(USAGE)
         return
